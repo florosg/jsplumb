@@ -2,9 +2,13 @@
 declare module jsPlumb {
 
     interface PaintStyle {
-        stroke?: string;
         fill?: string;
+        radius?: number;
+        stroke?: string;
         strokeWidth?: number;
+        joinstyle?: string;
+        outlineStroke?: string;
+        outlineWidth?: number;
     }
 
     module jsPlumb {

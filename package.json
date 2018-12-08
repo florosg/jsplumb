@@ -16,7 +16,9 @@
   "types": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "node ./install.js"
+    "init": "node ./install.js",
+    "build-cp":"npm run init && npm run cp",
+    "cp":"cp -r ./{dist,src} ../TechInsights3/vue/node_modules/quasar-framework"
   },
   "repository": {
     "type": "git",

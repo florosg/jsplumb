@@ -9,6 +9,7 @@ declare module jsPlumb {
         joinstyle?: string;
         outlineStroke?: string;
         outlineWidth?: number;
+        lineWidth?: number;
     }
 
     module jsPlumb {
@@ -437,6 +438,7 @@ declare module jsPlumb {
     /* --------------------------------------- OVERLAYS ------------------------------------------------------------- */
 
     interface OverlayOptions {
+        id?: string | number
     }
 
     interface ArrowOverlayOptions extends OverlayOptions {

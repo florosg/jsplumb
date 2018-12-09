@@ -311,6 +311,8 @@ declare module jsPlumb {
         setLabel(s: string): void;
         getElement(): Connection;
         repaint():void;
+        setData(o: object): void;
+        getData(): object
     }
 
 

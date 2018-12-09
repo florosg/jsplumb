@@ -5,6 +5,7 @@ declare module jsPlumb {
         fill?: string;
         radius?: number;
         stroke?: string;
+        strokeStyle?: string;
         strokeWidth?: number;
         joinstyle?: string;
         outlineStroke?: string;

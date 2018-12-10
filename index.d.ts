@@ -161,7 +161,7 @@ declare module jsPlumb {
 
         restoreDefaults(): jsPlumbInstance;
 
-        revalidate(el: string | Element | Selector): void;
+        revalidate(el: ElementGroupRef | Selector): void;
 
         select(params?: Object, scope?: string | string, source?: string | string, target?: string | string, connections?: Connection[]): { each(fn: (conn: Connection) => void): void };
 

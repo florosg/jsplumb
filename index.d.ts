@@ -1,5 +1,11 @@
 
 declare module jsPlumb {
+    type Selector = string;
+    type UUID = string;
+    type ElementId = string;
+    type ElementRef = ElementId | Element;
+    type ElementGroupRef = ElementId | Element | Array<ElementId> | Array<Element>;
+    type ConnectionId = string;
 
     interface PaintStyle {
         fill?: string;
@@ -25,7 +31,7 @@ declare module jsPlumb {
 
         function off(el: any, event: string, handler: Function): void;
 
-        function revalidate(el: Element): void;
+        function revalidate(el: ElementGroupRef): void;
 
         function getInstance(_defaults?: Defaults): jsPlumbInstance;
     }
@@ -50,12 +56,6 @@ declare module jsPlumb {
         function fastTrim(s:string):string;
     }
 
-    type Selector = string;
-    type UUID = string;
-    type ElementId = string;
-    type ElementRef = ElementId | Element;
-    type ElementGroupRef = ElementId | Element | Array<ElementId> | Array<Element>;
-    type ConnectionId = string;
 
     class jsPlumbInstance {
 

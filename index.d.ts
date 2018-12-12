@@ -32,6 +32,7 @@ declare module jsPlumb {
         function off(el: any, event: string, handler: Function): void;
 
         function revalidate(el: ElementGroupRef): void;
+        function setZoom(factor: number): void;
 
         function getInstance(_defaults?: Defaults): jsPlumbInstance;
     }
@@ -68,7 +69,7 @@ declare module jsPlumb {
         batch(fn: Function, doNotRepaintAfterwards?: boolean/* =false */): void;
 
         bind(event: "connection", callback: (info: ConnectionMadeEventInfo, originalEvent: Event) => void, insertAtStart?: boolean/* =false */): void;
-        bind(event: "click", callback: (info: Connection, originalEvent: Event) => void, insertAtStart?: boolean/* =false */): void;
+        bind(event: "click", callback: (info: Connection, originalEvent: Event  ) => void, insertAtStart?: boolean/* =false */): void;
         bind(event: string, callback: (info: OnConnectionBindInfo, originalEvent: Event) => void, insertAtStart?: boolean/* =false */): void;
 
         cleanupListeners(): void;
@@ -198,6 +199,7 @@ declare module jsPlumb {
         setTargetEnabled(el: string | Element | Selector, state: boolean): jsPlumbInstance;
 
         setTargetScope(el: Element | string, scope: string, connectionType?: string): void;
+        setZoom(factor: number): void;
 
         show(el: string | Element | Selector, changeEndpoints?: boolean/* =false */): jsPlumbInstance;
 

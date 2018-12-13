@@ -280,6 +280,7 @@ declare module jsPlumb {
         endpoint?: EndpointSpec;
         anchor?: AnchorSpec;
         anchors?: [AnchorSpec, AnchorSpec];
+        paintStyle?:PaintStyle,
         label?: string;
     }
 

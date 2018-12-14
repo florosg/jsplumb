@@ -282,6 +282,7 @@ declare module jsPlumb {
         anchors?: [AnchorSpec, AnchorSpec];
         paintStyle?:PaintStyle,
         label?: string;
+        cssClass?: string;
     }
 
     interface DragEventCallbackOptions {

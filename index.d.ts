@@ -280,6 +280,7 @@ declare module jsPlumb {
         endpoint?: EndpointSpec;
         anchor?: AnchorSpec;
         anchors?: [AnchorSpec, AnchorSpec];
+        endpoints?: [EndpointSpec, EndpointSpec];
         paintStyle?:PaintStyle,
         label?: string;
         cssClass?: string;
@@ -361,9 +362,9 @@ declare module jsPlumb {
         "connector-pointer-events"?: string;
         connectionType?: string;
         dragProxy?: string | Array<string>;
-        id: string;
-        scope: string;
-        reattachConnections: boolean;
+        id?: string;
+        scope?: string;
+        reattachConnections?: boolean;
         type: string; // "Dot", etc.
     }
 
